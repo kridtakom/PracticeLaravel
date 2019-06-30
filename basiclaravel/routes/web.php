@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TestController@show');
+
+Route::get('welcome/name/{name}','TestController@showName');
+
+
